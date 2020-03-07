@@ -1,5 +1,5 @@
 html,body{
-    height: 100%;
+    height: 100%;  /*Helps in centering on page*/
     background: url('./img/beach-cover.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -7,34 +7,9 @@ html,body{
     background-size: cover;
 }
 
-.vh-100 {
-    min-height:100vh;   
-}
-
-.flex-fill {
-    flex: 1 1 auto;
-}
-
-.btn-scroll-down {
-    display: block;
-    width: 54px;
-    height: 54px;
-    opacity: .5;
-    border: 3px solid #fff;
-}
-
-.btn-scroll-down:before
-{
-    position: relative;
-    display: block;
-    width: 36px;
-    height: 36px;
-    content: '';
-    margin-left: 6px;
-    margin-top: 6px;
-    background-image: url('//placehold.it/30');
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+body{
+    /*When using navbar-fixed-top it causes issues: https://stackoverflow.com/questions/11124777/twitter-bootstrap-navbar-fixed-top-overlapping-site */
+    padding-top: 110px;
 }
 
 nav{
@@ -43,4 +18,10 @@ nav{
 
 #mainNav > div > a{
     color: white;
+}
+
+h1{
+    color: white;
+    font-size: 45px;
+    font-family: Garamond ,Georgia, 'Times New Roman', Times, serif;
 }
