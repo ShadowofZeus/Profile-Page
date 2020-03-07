@@ -1,9 +1,46 @@
-/*html,body{
+html,body{
     height: 100%;
-    background: url('./img/air-bubbles.jpg') no-repeat center center fixed;
+    background: url('./img/beach-cover.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
-*/
+
+.vh-100 {
+    min-height:100vh;   
+}
+
+.flex-fill {
+    flex: 1 1 auto;
+}
+
+.btn-scroll-down {
+    display: block;
+    width: 54px;
+    height: 54px;
+    opacity: .5;
+    border: 3px solid #fff;
+}
+
+.btn-scroll-down:before
+{
+    position: relative;
+    display: block;
+    width: 36px;
+    height: 36px;
+    content: '';
+    margin-left: 6px;
+    margin-top: 6px;
+    background-image: url('//placehold.it/30');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+nav{
+    opacity: 0.45;
+}
+
+#mainNav > div > a{
+    color: white;
+}
